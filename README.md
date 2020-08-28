@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Yuqi He
+## STAT 184
+## 08/28/2020
 
 You can use the [editor on GitHub](https://github.com/bigmichyk/Yuqi-repo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
