@@ -1,39 +1,23 @@
 ## Yuqi He
-## STAT 184
-## 08/28/2020
+## CMPSC 442
+## Markdown file for Vacuum agent
 
-You can use the [editor on GitHub](https://github.com/bigmichyk/Yuqi-repo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### General pipeline
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. So the vacuum cleaner starts at the very top of the room. 
+2. If there is no obstacle, it will keep searching forward, until it hits 1 obstacle, which will eliminate the obstacle. 
+3. If the cleaner hits the wall, we want to know if we are going left or right. Notice that we always want the agent to search one line below.
+4. So if total turns is an even number, we want to turn left, if total turns is an odd number, we want the agent to turn right. 
+5. After initial turn, the agent will point downwards, so we want it to only go 1 unit forward to the next line below, and start searching the line below by turning again, which is defined by 4..
+6. The Vacuum will keep searching until all obstacles are removed and the final wall is hit (meaning there is no line below anymore).
 
-```markdown
-Syntax highlighted code block
+### How to use it
 
-# Header 1
-## Header 2
-### Header 3
+Follow steps of https://personal.psu.edu/cld5070/courses/cmpsc442-sp23/assignments/RBES_Assignment/ to setup the correct environment. Then run the vacuum agent file.
 
-- Bulleted
-- List
+### Issues
 
-1. Numbered
-2. List
+I did not command the agent to do a swirl type of motion. But I think the line-by-line searching is a great way to approach this. I think it potentially saves computational cost because this is an easier way.
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bigmichyk/Yuqi-repo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
